@@ -21,6 +21,7 @@ class MenuController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
     }
     
     
@@ -31,7 +32,18 @@ class MenuController: UIViewController {
         tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
+        
         tableView.register(MenuOptionCell.self, forCellReuseIdentifier: reuseIdentifer)
+        tableView.backgroundColor = .darkGray
+        tableView.separatorStyle = .none
+        tableView.rowHeight = 80
+        
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
     }
     
     

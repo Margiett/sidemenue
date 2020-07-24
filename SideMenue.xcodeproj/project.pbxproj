@@ -19,6 +19,7 @@
 		9F0EBCAF24CA88E30059682C /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCAE24CA88E30059682C /* MenuController.swift */; };
 		9F0EBCB124CB4C370059682C /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB024CB4C370059682C /* Protocol.swift */; };
 		9F0EBCB324CB53750059682C /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB224CB53750059682C /* MenuOptionCell.swift */; };
+		9F0EBCB524CB7E1E0059682C /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB424CB7E1E0059682C /* MenuOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		9F0EBCAE24CA88E30059682C /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		9F0EBCB024CB4C370059682C /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		9F0EBCB224CB53750059682C /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		9F0EBCB424CB7E1E0059682C /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		9F0EBCA924CA88850059682C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9F0EBCB424CB7E1E0059682C /* MenuOption.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				9F0EBCAB24CA88C00059682C /* ContainerController.swift in Sources */,
 				9F0EBCAD24CA88D00059682C /* HomeController.swift in Sources */,
 				9F0EBCB124CB4C370059682C /* Protocol.swift in Sources */,
+				9F0EBCB524CB7E1E0059682C /* MenuOption.swift in Sources */,
 				9F0EBC8C24CA81010059682C /* SideMenue.xcdatamodeld in Sources */,
 				9F0EBCB324CB53750059682C /* MenuOptionCell.swift in Sources */,
 				9F0EBC8224CA81010059682C /* AppDelegate.swift in Sources */,
