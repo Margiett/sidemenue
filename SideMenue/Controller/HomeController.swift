@@ -17,7 +17,7 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue // change the color to white 
+        view.backgroundColor = .white // change the color to white
         configureNavigationBar()
     }
     
@@ -30,11 +30,11 @@ class HomeController: UIViewController {
     }
     
     func configureNavigationBar() {
-        navigationController?.navigationBar.barTintColor = .systemPurple
+        navigationController?.navigationBar.barTintColor = .systemGray
         navigationController?.navigationBar.barStyle = .black // this makes any text show white
         
         navigationItem.title = "Side Menu"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(handleMenuToggle))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(handleMenuToggle))
         
     }
 

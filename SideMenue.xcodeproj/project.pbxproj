@@ -18,6 +18,7 @@
 		9F0EBCAD24CA88D00059682C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCAC24CA88D00059682C /* HomeController.swift */; };
 		9F0EBCAF24CA88E30059682C /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCAE24CA88E30059682C /* MenuController.swift */; };
 		9F0EBCB124CB4C370059682C /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB024CB4C370059682C /* Protocol.swift */; };
+		9F0EBCB324CB53750059682C /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB224CB53750059682C /* MenuOptionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		9F0EBCAC24CA88D00059682C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		9F0EBCAE24CA88E30059682C /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		9F0EBCB024CB4C370059682C /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		9F0EBCB224CB53750059682C /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		9F0EBCA724CA887E0059682C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F0EBCB224CB53750059682C /* MenuOptionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				9F0EBCAD24CA88D00059682C /* HomeController.swift in Sources */,
 				9F0EBCB124CB4C370059682C /* Protocol.swift in Sources */,
 				9F0EBC8C24CA81010059682C /* SideMenue.xcdatamodeld in Sources */,
+				9F0EBCB324CB53750059682C /* MenuOptionCell.swift in Sources */,
 				9F0EBC8224CA81010059682C /* AppDelegate.swift in Sources */,
 				9F0EBC8424CA81010059682C /* SceneDelegate.swift in Sources */,
 			);
