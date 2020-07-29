@@ -11,6 +11,7 @@ import UIKit
 class MenuOptionCell: UITableViewCell {
 
     //MARK: Properties
+    
     let iconImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit

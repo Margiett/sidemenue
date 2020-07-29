@@ -6,14 +6,17 @@
 //  Copyright © 2020 Margiett Gil. All rights reserved.
 //
 
-enum MenuOption: Int {
+import UIKit
+
+enum MenuOption: Int, CustomStringConvertible { // find out what is CustomerStringConvertible ?
     
     case Profile
     case Index
     case Notifications
     case Setting
-    
+
     var description: String {
+        
         switch self {
             
         case .Profile: return "Profile"
@@ -30,12 +33,11 @@ enum MenuOption: Int {
     var image: UIImage {
         
           switch self {
-            
           case .Profile: return UIImage(named: "") ?? UIImage()
           case .Index: return UIImage(named: " ") ?? UIImage()
           case .Notifications: return UIImage(named: "") ?? UIImage()
           case .Setting: return UIImage(named: " ") ?? UIImage()
               
           }
-      }
+    }
 }
