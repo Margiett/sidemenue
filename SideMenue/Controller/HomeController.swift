@@ -25,7 +25,7 @@ class HomeController: UIViewController {
     
     //MARK: Handlers
     @objc func handleMenuToggle() {
-        delegate?.handleMenuToggle()
+        delegate?.handleMenuToggle(formenuOption: nil)
         print("Toggle menu ..")
     }
     

@@ -16,6 +16,7 @@ class MenuController: UIViewController {
     //MARK: Properties
     
     var tableView: UITableView!
+    var delegate: HomeControllerDelegate?
     
     //MARK: Init
     
@@ -56,6 +57,18 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifer, for: indexPath) as! MenuOptionCell
+        
+        let menuOption = MenuOption(rawValue: indexPath.row)
+        cell.descriptionLabel.text = menuOption?.description
+        cell.iconImageView.image = menuOption?.image
+    
         return cell
     }
+    
+    // creating action into each icon
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let menuOption = MenuOption(rawValue: indexPath.row)
+        delegate?.handleMenuToggle(formenuOption: menuOption)
+    }
+    
 }
