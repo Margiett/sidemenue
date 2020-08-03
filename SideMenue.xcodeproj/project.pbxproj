@@ -20,6 +20,7 @@
 		9F0EBCB124CB4C370059682C /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB024CB4C370059682C /* Protocol.swift */; };
 		9F0EBCB324CB53750059682C /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB224CB53750059682C /* MenuOptionCell.swift */; };
 		9F0EBCB524CB7E1E0059682C /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB424CB7E1E0059682C /* MenuOption.swift */; };
+		9F925C4A24D795B3000A2C4B /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F925C4924D795B3000A2C4B /* SettingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		9F0EBCB024CB4C370059682C /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		9F0EBCB224CB53750059682C /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 		9F0EBCB424CB7E1E0059682C /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		9F925C4924D795B3000A2C4B /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				9F0EBCAA24CA88C00059682C /* ContainerController.swift */,
 				9F0EBCAC24CA88D00059682C /* HomeController.swift */,
 				9F0EBCAE24CA88E30059682C /* MenuController.swift */,
+				9F925C4924D795B3000A2C4B /* SettingController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F925C4A24D795B3000A2C4B /* SettingController.swift in Sources */,
 				9F0EBCAF24CA88E30059682C /* MenuController.swift in Sources */,
 				9F0EBCAB24CA88C00059682C /* ContainerController.swift in Sources */,
 				9F0EBCAD24CA88D00059682C /* HomeController.swift in Sources */,

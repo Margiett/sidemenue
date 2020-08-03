@@ -34,7 +34,7 @@ class HomeController: UIViewController {
         navigationController?.navigationBar.barStyle = .black // this makes any text show white
         
         navigationItem.title = "Side Menu"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(handleMenuToggle))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "line.horizontal.3"), style: .plain, target: self, action: #selector(handleMenuToggle))
         
     }
 

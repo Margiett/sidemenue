@@ -84,7 +84,10 @@ class ContainerController: UIViewController {
         }
         animateStatusaBar()
     }
+    
+    // this is where we select each view controller etc.. inbox profile messages 
     func didSelectMenuOption(menuOption: MenuOption) {
+        // here we are switching thru our enumarations our enum 
         switch menuOption {
             
         case .Profile:
@@ -94,7 +97,12 @@ class ContainerController: UIViewController {
         case .Notifications:
             print("show Notifications")
         case .Setting:
-            print("show setting")
+            // we should be able to see the pink this is calling the settings view controller
+            let controller = SettingController() // is better if we create an instance of SettingsController() so we can pass values from one controller to the next and you wont be able too unless you create an instance of that controller
+            let navBarController = UINavigationController(rootViewController: controller)
+            navBarController.modalPresentationStyle = .overFullScreen
+            present(navBarController, animated: true)
+            //print("show setting")
         }
     }
     
