@@ -21,6 +21,8 @@
 		9F0EBCB324CB53750059682C /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB224CB53750059682C /* MenuOptionCell.swift */; };
 		9F0EBCB524CB7E1E0059682C /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EBCB424CB7E1E0059682C /* MenuOption.swift */; };
 		9F925C4A24D795B3000A2C4B /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F925C4924D795B3000A2C4B /* SettingController.swift */; };
+		9FE6B57724ED5BC200D85A70 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6B57624ED5BC200D85A70 /* UserInfoHeader.swift */; };
+		9FE6B57924ED5CB200D85A70 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6B57824ED5CB200D85A70 /* SettingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		9F0EBCB224CB53750059682C /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 		9F0EBCB424CB7E1E0059682C /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		9F925C4924D795B3000A2C4B /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		9FE6B57624ED5BC200D85A70 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
+		9FE6B57824ED5CB200D85A70 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				9F0EBCB224CB53750059682C /* MenuOptionCell.swift */,
+				9FE6B57624ED5BC200D85A70 /* UserInfoHeader.swift */,
+				9FE6B57824ED5CB200D85A70 /* SettingCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,7 +261,9 @@
 			files = (
 				9F925C4A24D795B3000A2C4B /* SettingController.swift in Sources */,
 				9F0EBCAF24CA88E30059682C /* MenuController.swift in Sources */,
+				9FE6B57924ED5CB200D85A70 /* SettingCell.swift in Sources */,
 				9F0EBCAB24CA88C00059682C /* ContainerController.swift in Sources */,
+				9FE6B57724ED5BC200D85A70 /* UserInfoHeader.swift in Sources */,
 				9F0EBCAD24CA88D00059682C /* HomeController.swift in Sources */,
 				9F0EBCB124CB4C370059682C /* Protocol.swift in Sources */,
 				9F0EBCB524CB7E1E0059682C /* MenuOption.swift in Sources */,
