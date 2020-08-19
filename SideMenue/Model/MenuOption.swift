@@ -30,13 +30,15 @@ enum MenuOption: Int, CustomStringConvertible { // find out what is CustomerStri
         }
     }
     
+    //navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "line.horizontal.3"), style: .plain, target: self, action: #selector(handleMenuToggle))
+    
     var image: UIImage {
         
           switch self {
-          case .Profile: return UIImage(named: "") ?? UIImage()
-          case .Index: return UIImage(named: " ") ?? UIImage()
-          case .Notifications: return UIImage(named: "") ?? UIImage()
-          case .Setting: return UIImage(named: " ") ?? UIImage()
+          case .Profile: return UIImage(systemName: "person") ?? UIImage()
+          case .Index: return UIImage(systemName: "tray.and.arrow.down") ?? UIImage()
+          case .Notifications: return UIImage(systemName: "bell.fill") ?? UIImage()
+          case .Setting: return UIImage(systemName: "gear") ?? UIImage()
               
           }
     }

@@ -102,7 +102,7 @@ class ContainerController: UIViewController {
             let navBarController = UINavigationController(rootViewController: controller)
             navBarController.modalPresentationStyle = .overFullScreen
             present(navBarController, animated: true)
-            //print("show setting")
+            print("show setting")
         }
     }
     
