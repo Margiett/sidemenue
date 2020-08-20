@@ -17,8 +17,6 @@ class UserInfoHeader: UIView {
         iv.clipsToBounds = true
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.image = UIImage(named: "") // add pictures in your aspect and put the name of it here ""
-        
-        
         return iv
     }()
        

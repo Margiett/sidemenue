@@ -60,8 +60,12 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
         
         let menuOption = MenuOption(rawValue: indexPath.row)
         cell.descriptionLabel.text = menuOption?.description
-        cell.iconImageView.image = menuOption?.image
-    
+        
+        let icon = menuOption?.image.withTintColor(.orange, renderingMode: .alwaysOriginal) // this describes how to draw the image, having the image with some color
+        
+        
+       // icon?.withTintColor(.orange)
+        cell.iconImageView.image = icon
         return cell
     }
     

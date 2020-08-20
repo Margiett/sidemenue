@@ -30,7 +30,7 @@ enum MenuOption: Int, CustomStringConvertible { // find out what is CustomerStri
         }
     }
     
-    //navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "line.horizontal.3"), style: .plain, target: self, action: #selector(handleMenuToggle))
+    
     
     var image: UIImage {
         

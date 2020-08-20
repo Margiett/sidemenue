@@ -39,8 +39,8 @@ class SettingController: UIViewController {
     
     func configureTableView() {
         tableView = UITableView()
-        tableView.delegate = self
-        tableView.dataSource = self
+        //tableView.delegate = self
+        //tableView.dataSource = self
         tableView.rowHeight = 60
         
         tableView.register(SettingCell.self, forCellReuseIdentifier: reuseIdentifier)
