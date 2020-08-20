@@ -49,8 +49,8 @@ class SettingController: UIViewController {
         
         let frame = CGRect(x: 0, y: 88, width: view.frame.width, height: 100)
         userInfoHeader = UserInfoHeader(frame: frame)
-        tableView.tableHeaderView = userInfoHeader
-        tableView.tableFooterView = UIView()
+         tableView.tableHeaderView = userInfoHeader // This line of code is what makes the users name and email pop up
+         tableView.tableFooterView = UIView() // Not sure why i need this line of code here !! 
         
     }
     
@@ -64,7 +64,7 @@ class SettingController: UIViewController {
         navigationController?.navigationBar.barStyle = .black
         view.backgroundColor = .white
         navigationController?.navigationBar.barTintColor = UIColor(red: 55/255, green: 120/255, blue: 250/255, alpha: 1)
-        navigationItem.title = "Setting"
+        navigationItem.title = "Testing"
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(handleDismiss))
     }
     
@@ -124,6 +124,8 @@ extension SettingController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SettingCell
+        
+        
         //MARK: delete this soon this is for testing 
 //        switch indexPath.section {
 //        case 0: cell.backgroundColor = .orange

@@ -11,6 +11,7 @@ import UIKit
 class UserInfoHeader: UIView {
      //MARK: Properties
     
+    //MARK: This is the users profile image !
     let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
@@ -20,6 +21,7 @@ class UserInfoHeader: UIView {
         return iv
     }()
     
+    //MARK: This is the users name
     let usernameLabel: UILabel = {
         let label = UILabel()
         label.text = "Margiett"
@@ -30,6 +32,7 @@ class UserInfoHeader: UIView {
         
     }()
     
+    //MARK: this is the users email
     let emailLabel: UILabel = {
         let label = UILabel()
         label.text = "mxg627@gmail.com"
@@ -48,9 +51,10 @@ class UserInfoHeader: UIView {
         let profileImageDimension: CGFloat = 60
         
         
-        //MARK: profile Image View
+        //MARK: User Profile image constrains why is my image coming up ??
         addSubview(profileImageView)
-        profileImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        
+        profileImageView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 8).isActive = true
         profileImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
         profileImageView.widthAnchor.constraint(equalToConstant: profileImageDimension).isActive = true
         profileImageView.heightAnchor.constraint(equalToConstant: profileImageDimension).isActive = true
@@ -67,7 +71,9 @@ class UserInfoHeader: UIView {
         
         //MARK: Email Label constrains 
         addSubview(emailLabel)
+        
         usernameLabel.centerYAnchor.constraint(equalTo: profileImageView.centerYAnchor, constant: -10).isActive = true
+        
         usernameLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 12).isActive = true
         
         
