@@ -68,8 +68,21 @@ class SettingController: UIViewController {
     }
     
     
-    
-    
-    
-    
 } // the curly for the class 
+
+//MARK: Extensions
+
+extension SettingController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SettingCell
+        return cell
+        
+    }
+    
+  
+}
