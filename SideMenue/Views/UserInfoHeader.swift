@@ -16,13 +16,13 @@ class UserInfoHeader: UIView {
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.image = UIImage(named: "") // add pictures in your aspect and put the name of it here ""
+        iv.image = UIImage(named: "Margiett") // add pictures in your aspect and put the name of it here ""
         return iv
     }()
     
     let usernameLabel: UILabel = {
         let label = UILabel()
-        label.text = " Add Text here "
+        label.text = "Margiett"
         label.font = UIFont.systemFont(ofSize: 16)
         label.translatesAutoresizingMaskIntoConstraints = false // what does this do ?
         
@@ -32,7 +32,7 @@ class UserInfoHeader: UIView {
     
     let emailLabel: UILabel = {
         let label = UILabel()
-        label.text = " enter a email here missing text !!!! Margiett come back"
+        label.text = "mxg627@gmail.com"
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .orange
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -51,10 +51,13 @@ class UserInfoHeader: UIView {
         //MARK: profile Image View
         addSubview(profileImageView)
         profileImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        profileImageView.leftAnchor.constraint(equalTo: leftAnchor,constant: 16).isActive = true
+        profileImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
         profileImageView.widthAnchor.constraint(equalToConstant: profileImageDimension).isActive = true
         profileImageView.heightAnchor.constraint(equalToConstant: profileImageDimension).isActive = true
         profileImageView.layer.cornerRadius = profileImageDimension / 2
+        
+        
+        
         
         //MARK: constraints for user name label
         addSubview(usernameLabel)
