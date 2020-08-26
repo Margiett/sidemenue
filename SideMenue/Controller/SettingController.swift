@@ -50,21 +50,24 @@ class SettingController: UIViewController {
         let frame = CGRect(x: 0, y: 88, width: view.frame.width, height: 100)
         userInfoHeader = UserInfoHeader(frame: frame)
          tableView.tableHeaderView = userInfoHeader // This line of code is what makes the users name and email pop up
-         tableView.tableFooterView = UIView() // Not sure why i need this line of code here !! 
+         tableView.tableFooterView = UIView() // Not sure why i need this line of code here !!
         
     }
     
     
     func confirgureUI() { //MARK: Might need to put this on the appDelegate because thats where it will control the navigation bar for the whole app
         
+        //MARK: Need to figure out how to change the color of the settings to white !!
+        
         configureTableView()
         
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.barStyle = .black
-        view.backgroundColor = .white
-        navigationController?.navigationBar.barTintColor = UIColor(red: 55/255, green: 120/255, blue: 250/255, alpha: 1)
-        navigationItem.title = "Testing"
+    
+        //navigationController?.navigationBar.barStyle = .black
+       // view.backgroundColor = .white
+       // navigationController?.navigationBar.barTintColor = UIColor(red: 55/255, green: 120/255, blue: 250/255, alpha: 1)
+        navigationItem.title = "Settings"
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(handleDismiss))
     }
     
@@ -133,15 +136,18 @@ extension SettingController: UITableViewDelegate, UITableViewDataSource {
 //        default: break
 //        }
         
-        guard let section = SettingsSection(rawValue: indexPath.section) else { return UITableViewCell() }
+        guard let section = SettingsSection(rawValue: indexPath.section) else { return UITableViewCell() } // we created out sections here
                
+        // this is where we handle which statement in the switch 
                        switch section {
                        case .Social :
                         let social = SocialOptions(rawValue: indexPath.row)
-                        cell.textLabel?.text = social?.description
+                        cell.sectionType = social
+                        //cell.textLabel?.text = social?.description
                        case .Communications:
                         let communications = CommunicationOptions(rawValue: indexPath.row)
-                        cell.textLabel?.text = communications?.description
+                        cell.sectionType = communications
+                        //cell.textLabel?.text = communications?.description
                        
                        }
         

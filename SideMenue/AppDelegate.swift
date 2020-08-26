@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Navigartion bar , this will control the whole app and be consitant with the color.
         let navigationBarAppearance = UINavigationBar.appearance()
         let appearance = UINavigationBarAppearance()
-        navigationBarAppearance.barTintColor = .darkGray
+        navigationBarAppearance.barTintColor = .gray
         appearance.backgroundColor = navigationBarAppearance.barTintColor
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white] // this made the title color turn white
         navigationBarAppearance.scrollEdgeAppearance = appearance
